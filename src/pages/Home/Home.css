@@ -6,36 +6,4 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  height: 68px;
-  margin: 45px 100px 0 100px;
-}
-.header-container nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 57px;
-}
-.header-container nav ul li {
-  font-weight: 500;
-}
-.header-container nav ul li:hover {
-  text-decoration: underline;
-}
-
-footer .footer-container {
-  color: white;
-  background-color: black;
-  height: 209px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 28.56px;
-}
-footer .footer-container img {
-  height: 40px;
 }/*# sourceMappingURL=Home.css.map */

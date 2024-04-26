@@ -1,15 +1,12 @@
-import Header from '../../components/Header/Header';
-import './Home.css';
+
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+import './home.css';
 
 export default function Home() {
     return (<div>
         <Header />
-        <footer>
-            <div className="footer-container">
-                    <img src="../../public/Small_logo.png" alt="Logo" />
-                    <p>© 2020 Kasa. All rights reserved</p>
-            </div>
-        </footer>
+        <Footer />
     </div>
     )
 }

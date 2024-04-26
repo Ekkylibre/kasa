@@ -1,1 +1,13 @@
-/*# sourceMappingURL=Footer.css.map */
+footer .footer-container {
+  color: white;
+  background-color: black;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28.56px;
+}
+footer .footer-container img {
+  height: 40px;
+}/*# sourceMappingURL=Footer.css.map */

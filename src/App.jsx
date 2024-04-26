@@ -1,14 +1,15 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import Accoommodation from './pages/Accommodation/Accommodation'
-import Error from './pages/Error/Error 404'
-import About from './pages/About/About'
+import Home from './pages/home/Home'
+import Accommodation from './pages/accommodation/Accommodation'
+import Error from './pages/error/Error 404'
+import About from './pages/about/About'
+
 
 function App() {
   return (<Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/accommodation" element={<Accoommodation />} />
+    <Route path="/accommodation" element={<Accommodation />} />
     <Route path="*" element={<Error />} />
     <Route path="/about" element={<About />} />
   </Routes>
