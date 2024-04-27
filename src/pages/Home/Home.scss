@@ -10,39 +10,3 @@ sans-serif;
 body {
   font-family: $font-family;
 }
-
-.banner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 53px 0 43px 0;
-
-  img {
-    width: 1240px;
-    height: 223px;
-    border-radius: 25px;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 1240px;
-    height: 223px;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
-  }
-
-  div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 48px;
-    font-weight: 700;
-  }
-}
