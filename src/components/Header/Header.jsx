@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-container">
-        <img src="/Logo.png" alt="Logo" className="logo" />
+        <img src="/Logo.png" alt="Logo"/>
         <nav>
           <ul>
             <li><NavLink exact to="/" activeClassName="active">Accueil</NavLink></li>
