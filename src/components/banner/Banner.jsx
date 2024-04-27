@@ -6,7 +6,7 @@ export default function Banner() {
     return (
             <div className='banner-container'>
                 <img src={bannerImg} alt="Banner" />
-                <div>{text}</div>
+                <h1>{text}</h1>
             </div>
     )
 }

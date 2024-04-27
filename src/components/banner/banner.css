@@ -22,7 +22,7 @@
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
 }
-.banner-container div {
+.banner-container h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,4 +30,5 @@
   color: white;
   font-size: 48px;
   font-weight: 700;
+  text-align: center;
 }/*# sourceMappingURL=banner.css.map */
