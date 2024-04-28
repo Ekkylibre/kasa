@@ -8,8 +8,8 @@ export default function Header() {
         <img src="/Logo.png" alt="Logo"/>
         <nav>
           <ul>
-            <li><NavLink exact to="/" activeClassName="active">Accueil</NavLink></li>
-            <li><NavLink to="/about" activeClassName="active">A Propos</NavLink></li>
+            <li><NavLink to="/" activeclassname="active">Accueil</NavLink></li>
+            <li><NavLink to="/about" activeclassname="active">A Propos</NavLink></li>
           </ul>
         </nav>
       </div>
