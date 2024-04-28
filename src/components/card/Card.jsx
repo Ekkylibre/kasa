@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './card.css';
+import { Link } from 'react-router-dom';
 
 export default function Card() {
 
@@ -18,20 +19,20 @@ export default function Card() {
             console.error('Erreur lors de la récupération des données JSON :', error);
         }
     };
-  return (
-    <section>
+    return (
+        <section>
             <ul>
                 {data.map(item => (
-                    <li key={item.id}>
-                        <a href="">
+                    <li key={item.id}>                     
+                        <Link to={`/accommodation/${item.id}`}>
                             <div>
                                 <img src={item.cover} alt={item.title} />
                                 <h2>{item.title}</h2>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
         </section>
-  )
+    )
 }
