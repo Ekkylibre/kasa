@@ -56,24 +56,6 @@ main .accommodation-info p {
   font-weight: 500;
   margin-bottom: 20px;
 }
-main .accommodation-info .tag {
-  display: flex;
-  gap: 10px;
-}
-main .accommodation-info .tag li {
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #FF6060;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  padding: 0 20px 0 20px;
-  margin-bottom: 24px;
-  gap: 10px;
-}
 main div .host {
   display: flex;
   flex-direction: column;

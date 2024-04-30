@@ -8,6 +8,7 @@ import './accommodation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import Tag from "../../components/tag/Tag";
 
 
 export default function Accommodation() {
@@ -97,11 +98,7 @@ export default function Accommodation() {
                         <div>
                             <h2>{accommodation.title}</h2>
                             <p>{accommodation.location}</p>
-                            <ul className="tag">
-                                {accommodation.tags.map(tag => (
-                                    <li key={tag}>{tag}</li>
-                                ))}
-                            </ul>
+                            <Tag tags={accommodation.tags} />
                         </div>
                         <div className="host">
                             <div className="profile">
