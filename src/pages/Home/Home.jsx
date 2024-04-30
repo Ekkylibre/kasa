@@ -7,11 +7,9 @@ import Card from '../../components/card/Card';
 export default function Home() {
     return (
         <div>
-            <div className="container">
-                <Header />
-                <Banner />
-                <Card />
-            </div>
+            <Header />
+            <Banner />
+            <Card />
             <Footer />
         </div>
 

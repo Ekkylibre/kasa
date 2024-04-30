@@ -1,13 +1,16 @@
 $primary-color: #FF6060;
 
 main {
-    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1240px;
 
     .accommodation-img {
         width: 1240px;
         height: 415px;
         object-fit: cover;
         border-radius: 25px;
+        margin-bottom: 30px;
     }
 
     .accommodation-info {

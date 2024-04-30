@@ -1,27 +1,32 @@
 header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 68px;
     margin-top: 45px;
+    margin-bottom: 50px;
 
     img {
       width: 210px;
       height: 68px;
     }
-  
+
     nav ul {
       list-style-type: none;
       display: flex;
       gap: 57px;
-  
+
       li {
         font-weight: 500;
-  
+
         a {
           text-decoration: none;
-  
+
           &:hover {
             text-decoration: underline;
           }
@@ -29,5 +34,5 @@ header {
       }
     }
   }
-  
+
 }
