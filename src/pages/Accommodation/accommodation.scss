@@ -5,13 +5,50 @@ main {
     margin-right: auto;
     max-width: 1240px;
 
-    .accommodation-img {
-        width: 1240px;
-        height: 415px;
-        object-fit: cover;
-        border-radius: 25px;
-        margin-bottom: 30px;
+    .carrousel {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .counter {
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .accommodation-img {
+            display: block;
+            width: 100%;
+            height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .chevron-left,
+        .chevron-right {
+            position: absolute;
+            margin: 23px;
+            cursor: pointer;
+
+            path {
+                fill: white;
+            }
+        }
+
+        .chevron-left {
+            left: 0;
+        }
+
+        .chevron-right {
+            right: 0;
+        }
     }
+
+
 
     .accommodation-info {
         display: flex;
@@ -20,6 +57,14 @@ main {
 
         h2 {
             color: $primary-color;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
         }
 
         .tag {
@@ -29,6 +74,7 @@ main {
             li {
                 color: white;
                 font-size: 14px;
+                font-weight: 700;
                 background-color: $primary-color;
                 border-radius: 10px;
                 display: flex;
@@ -36,6 +82,7 @@ main {
                 align-items: center;
                 height: 25px;
                 padding: 0 20px 0 20px;
+                margin-bottom: 24px;
                 gap: 10px;
             }
         }
@@ -51,9 +98,11 @@ main {
                 display: flex;
                 align-items: center;
                 width: 80%;
+                margin-bottom: 21px;
 
                 p {
                     color: $primary-color;
+                    margin-bottom: 0;
                 }
 
                 img {
@@ -65,7 +114,7 @@ main {
 
             .stars {
                 display: flex;
-                gap: 4px;
+                gap: 10px;
             }
         }
     }
