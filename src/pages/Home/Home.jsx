@@ -5,11 +5,15 @@ import Banner from '../../components/banner/Banner';
 import Card from '../../components/card/Card';
 
 export default function Home() {
-    return (<div>
-        <Header />
-        <Banner />
-        <Card />
-        <Footer />
-    </div>
-    )
+    return (
+        <div>
+            <div className="container">
+                <Header />
+                <Banner />
+                <Card />
+            </div>
+            <Footer />
+        </div>
+
+    );
 }

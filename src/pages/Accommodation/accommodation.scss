@@ -1,0 +1,117 @@
+$primary-color: #FF6060;
+
+main {
+    width: 1240px;
+
+    .accommodation-img {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .accommodation-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            color: $primary-color;
+        }
+
+        .tag {
+            display: flex;
+            gap: 10px;
+
+            li {
+                color: white;
+                font-size: 14px;
+                background-color: $primary-color;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 25px;
+                padding: 0 20px 0 20px;
+                gap: 10px;
+            }
+        }
+    }
+
+    div {
+        .host {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .profile {
+                display: flex;
+                align-items: center;
+                width: 80%;
+
+                p {
+                    color: $primary-color;
+                }
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+
+            .stars {
+                display: flex;
+                gap: 4px;
+            }
+        }
+    }
+
+    .collapse {
+        display: flex;
+        gap: 76px;
+
+        .dropdown {
+            width: 582px;
+            background-color: #F6F6F673;
+
+            .collapse-title {
+                color: white;
+                background-color: $primary-color;
+                border-radius: 5px;
+                height: 52px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 18px;
+                font-weight: 700;
+
+                .fa-chevron-up,
+                .fa-chevron-up {
+                    cursor: pointer;
+                }
+
+                .rotate-up {
+                    transform: rotate(0deg);
+                    transition: transform 0.3s ease;
+                }
+
+                .rotate-down {
+                    transform: rotate(-180deg);
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .equipment {
+                list-style-type: none;
+                padding: 20px;
+            }
+
+            p {
+                padding: 20px;
+            }
+        }
+    }
+}

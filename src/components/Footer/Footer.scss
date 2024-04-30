@@ -1,4 +1,6 @@
 footer {
+    padding-top: 50px;
+
     .footer-container {
         color: white;
         background-color: black;
@@ -9,8 +11,8 @@ footer {
         align-items: center;
         gap: 28.56px;
 
-            img {
-                height: 40px;
-            }
+        img {
+            height: 40px;
+        }
     }
 }

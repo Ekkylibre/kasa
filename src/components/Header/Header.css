@@ -1,25 +1,25 @@
-.header-container {
+header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 68px;
   margin-top: 45px;
 }
-.header-container img {
+header .header-container img {
   width: 210px;
   height: 68px;
 }
-.header-container nav ul {
+header .header-container nav ul {
   list-style-type: none;
   display: flex;
   gap: 57px;
 }
-.header-container nav ul li {
+header .header-container nav ul li {
   font-weight: 500;
 }
-.header-container nav ul li a {
+header .header-container nav ul li a {
   text-decoration: none;
 }
-.header-container nav ul li a:hover {
+header .header-container nav ul li a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=header.css.map */

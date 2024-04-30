@@ -1,0 +1,96 @@
+main {
+  width: 1240px;
+}
+main .accommodation-img {
+  width: 1240px;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+main .accommodation-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .accommodation-info h2 {
+  color: #FF6060;
+}
+main .accommodation-info .tag {
+  display: flex;
+  gap: 10px;
+}
+main .accommodation-info .tag li {
+  color: white;
+  font-size: 14px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  padding: 0 20px 0 20px;
+  gap: 10px;
+}
+main div .host {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+main div .host .profile {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+main div .host .profile p {
+  color: #FF6060;
+}
+main div .host .profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+main div .host .stars {
+  display: flex;
+  gap: 4px;
+}
+main .collapse {
+  display: flex;
+  gap: 76px;
+}
+main .collapse .dropdown {
+  width: 582px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+main .collapse .dropdown .collapse-title {
+  color: white;
+  background-color: #FF6060;
+  border-radius: 5px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .collapse .dropdown .collapse-title .fa-chevron-up,
+main .collapse .dropdown .collapse-title .fa-chevron-up {
+  cursor: pointer;
+}
+main .collapse .dropdown .collapse-title .rotate-up {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+main .collapse .dropdown .collapse-title .rotate-down {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
+}
+main .collapse .dropdown .equipment {
+  list-style-type: none;
+  padding: 20px;
+}
+main .collapse .dropdown p {
+  padding: 20px;
+}/*# sourceMappingURL=accommodation.css.map */

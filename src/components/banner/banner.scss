@@ -1,12 +1,14 @@
-.banner-container {
+div {
+  .banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     padding: 50px 0 43px 0;
+    
   
     img {
-      width: 1240px;
+      width: 100%;
       height: 223px;
       border-radius: 25px;
       background-size: cover;
@@ -17,10 +19,10 @@
     &::before {
       content: '';
       position: absolute;
-      width: 1240px;
+      width: 100%;
       height: 223px;
       border-radius: 25px;
-      background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
+      background-color: rgba(0, 0, 0, 0.5);
     }
   
     h1 {
@@ -34,3 +36,4 @@
       text-align: center;
     }
   }
+}
