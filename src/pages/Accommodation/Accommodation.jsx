@@ -7,8 +7,8 @@ import './accommodation.css';
 // Importer la bibliothèque Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Tag from "../../components/tag/Tag";
+import Collapse from "../../components/collapse/Collapse";
 
 
 export default function Accommodation() {
@@ -111,38 +111,25 @@ export default function Accommodation() {
                         </div>
                     </div>
                     <div className="collapse">
-                        <div className="dropdown">
-                            <div className="collapse-title">
-                                <p>Description</p>
-                                <FontAwesomeIcon
-                                    icon={faChevronUp}
-                                    onClick={() => toggleCollapse('description', isDescriptionOpen ? 'down' : 'up')}
-                                    className={`fa-chevron-up description ${isDescriptionOpen ? 'rotate-down' : 'rotate-up'}`}
-                                />
-
-                            </div>
-                            {isDescriptionOpen && <p>{accommodation.description}</p>}
-                        </div>
-                        <div className="dropdown">
-                            <div className="collapse-title">
-                                <p>Équipements</p>
-                                <FontAwesomeIcon
-                                    icon={faChevronUp}
-                                    onClick={() => toggleCollapse('equipments', isEquipmentsOpen ? 'down' : 'up')}
-                                    className={`fa-chevron-up equipments ${isEquipmentsOpen ? 'rotate-down' : 'rotate-up'}`}
-                                />
-
-                            </div>
-                            {isEquipmentsOpen && (
-                                <ul className="equipment">
-                                    {accommodation.equipments.map(equipment => (
-                                        <li key={equipment}>{equipment}</li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
+                    <Collapse
+                        title="Description"
+                        isOpen={isDescriptionOpen}
+                        toggleCollapse={() => toggleCollapse('description')}
+                    >
+                        <p>{accommodation.description}</p>
+                    </Collapse>
+                    <Collapse
+                        title="Équipements"
+                        isOpen={isEquipmentsOpen}
+                        toggleCollapse={() => toggleCollapse('equipments')}
+                    >
+                        <ul className="equipment">
+                            {accommodation.equipments.map(equipment => (
+                                <li key={equipment}>{equipment}</li>
+                            ))}
+                        </ul>
+                    </Collapse>
                     </div>
-
                 </main>
             )}
             <Footer />

@@ -79,44 +79,4 @@ main div .host .profile img {
 main div .host .stars {
   display: flex;
   gap: 10px;
-}
-main .collapse {
-  display: flex;
-  gap: 76px;
-}
-main .collapse .dropdown {
-  width: 582px;
-  background-color: rgba(246, 246, 246, 0.4509803922);
-}
-main .collapse .dropdown .collapse-title {
-  color: white;
-  background-color: #FF6060;
-  border-radius: 5px;
-  height: 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 18px;
-  font-weight: 700;
-}
-main .collapse .dropdown .collapse-title .fa-chevron-up,
-main .collapse .dropdown .collapse-title .fa-chevron-up {
-  cursor: pointer;
-}
-main .collapse .dropdown .collapse-title .rotate-up {
-  transform: rotate(0deg);
-  transition: transform 0.3s ease;
-}
-main .collapse .dropdown .collapse-title .rotate-down {
-  transform: rotate(-180deg);
-  transition: transform 0.3s ease;
-}
-main .collapse .dropdown .equipment {
-  list-style-type: none;
-  padding: 20px;
-}
-main .collapse .dropdown p {
-  padding: 20px;
 }/*# sourceMappingURL=accommodation.css.map */
