@@ -79,10 +79,12 @@ main {
                 align-items: center;
                 width: 80%;
                 margin-bottom: 21px;
+                gap: 10px;
 
                 p {
                     color: $primary-color;
                     margin-bottom: 0;
+                    text-align: end;
                 }
 
                 img {
