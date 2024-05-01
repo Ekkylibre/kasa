@@ -2,7 +2,7 @@ import './banner.css';
 
 export default function Banner() {
     const text = "Chez vous, partout et ailleurs";
-    const bannerImg = "../../../public/img1.jpg";
+    const bannerImg = "/img1.jpg";
     return (
             <div className='banner'>
                 <div className='banner-container'>
