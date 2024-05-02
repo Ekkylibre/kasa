@@ -110,7 +110,7 @@ export default function Accommodation() {
                             </p>
                         </div>
                     </div>
-                    <div className="collapse">
+                    <div className="collapse-container">
                     <Collapse
                         title="Description"
                         isOpen={isDescriptionOpen}

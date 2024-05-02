@@ -82,7 +82,7 @@ main div .host .stars {
   display: flex;
   gap: 10px;
 }
-main .collapse {
+main .collapse-container {
   display: flex;
   gap: 76px;
 }/*# sourceMappingURL=accommodation.css.map */
