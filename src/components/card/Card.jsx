@@ -19,6 +19,7 @@ export default function Card() {
             console.error('Erreur lors de la récupération des données JSON :', error);
         }
     };
+    
     return (
         <section>
             <ul>
