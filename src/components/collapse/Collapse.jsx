@@ -1,8 +1,15 @@
 import './collapse.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
-export default function Collapse({ title, isOpen, toggleCollapse, children }) {
+export default function Collapse({ title, children }) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleCollapse = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <div className="collapse-container">
             <div className="dropdown">

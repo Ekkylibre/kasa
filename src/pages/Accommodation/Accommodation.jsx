@@ -10,12 +10,9 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Tag from "../../components/tag/Tag";
 import Collapse from "../../components/collapse/Collapse";
 
-
 export default function Accommodation() {
     const { id } = useParams();
     const [accommodation, setAccommodation] = useState(null);
-    const [isDescriptionOpen, setDescriptionOpen] = useState(false);
-    const [isEquipmentsOpen, setEquipmentsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -39,25 +36,6 @@ export default function Accommodation() {
 
     const handlePrevImage = () => {
         setCurrentIndex((currentIndex - 1 + accommodation.pictures.length) % accommodation.pictures.length);
-    };
-
-    const toggleCollapse = (collapseType, direction) => {
-        if (collapseType === 'description') {
-            setDescriptionOpen(!isDescriptionOpen);
-        } else if (collapseType === 'equipments') {
-            setEquipmentsOpen(!isEquipmentsOpen);
-        }
-
-        const icon = document.querySelector(`.fa-chevron-up.${collapseType}`);
-        if (icon) {
-            if (direction === 'up') {
-                icon.classList.remove('rotate-down');
-                icon.classList.add('rotate-up');
-            } else {
-                icon.classList.remove('rotate-up');
-                icon.classList.add('rotate-down');
-            }
-        }
     };
 
 
@@ -111,24 +89,16 @@ export default function Accommodation() {
                         </div>
                     </div>
                     <div className="collapse-container">
-                    <Collapse
-                        title="Description"
-                        isOpen={isDescriptionOpen}
-                        toggleCollapse={() => toggleCollapse('description')}
-                    >
-                        <p>{accommodation.description}</p>
-                    </Collapse>
-                    <Collapse
-                        title="Équipements"
-                        isOpen={isEquipmentsOpen}
-                        toggleCollapse={() => toggleCollapse('equipments')}
-                    >
-                        <ul className="equipment">
-                            {accommodation.equipments.map(equipment => (
-                                <li key={equipment}>{equipment}</li>
-                            ))}
-                        </ul>
-                    </Collapse>
+                        <Collapse title="Description">
+                            {accommodation.description}
+                        </Collapse>
+                        <Collapse title="Équipements">
+                            <ul className="equipment">
+                                {accommodation.equipments.map(equipment => (
+                                    <li key={equipment}>{equipment}</li>
+                                ))}
+                            </ul>
+                        </Collapse>
                     </div>
                 </main>
             )}
