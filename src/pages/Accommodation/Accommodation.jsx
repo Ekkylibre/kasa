@@ -1,17 +1,16 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import { useEffect, useState } from "react";
 import './accommodation.css';
-
-// Importer la bibliothèque Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Tag from "../../components/tag/Tag";
 import Collapse from "../../components/collapse/Collapse";
 
 export default function Accommodation() {
-    const { id } = useParams(); //add use navigate
+    const { id } = useParams();
+    const navigate = useNavigate();
     const [accommodation, setAccommodation] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,6 +20,10 @@ export default function Accommodation() {
                 const response = await fetch('../src/assets/data/data.json');
                 const jsonData = await response.json();
                 const selectedAccommodation = jsonData.find(item => item.id === id);
+                if (!selectedAccommodation) {
+                    navigate('/error');
+                    return;
+                }
                 setAccommodation(selectedAccommodation);
             } catch (error) {
                 console.error('Erreur lors de la récupération des données JSON :', error);
@@ -28,8 +31,7 @@ export default function Accommodation() {
         };
 
         fetchData();
-    }, [id]);
-
+    }, [id, navigate]);
     const handleNextImage = () => {
         setCurrentIndex((currentIndex + 1) % accommodation.pictures.length);
     };
