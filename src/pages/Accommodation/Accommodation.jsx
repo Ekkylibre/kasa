@@ -73,9 +73,7 @@ export default function Accommodation() {
                                     <p>{accommodation.host.name}</p>
                                     <img src={accommodation.host.picture} alt={accommodation.host.name} />
                                 </div>
-                                <p className="stars">
                                 <Stars rating={accommodation.rating} />
-                                </p>
                             </div>
                         </div>
                         <div className="collapse-container">
