@@ -1,4 +1,3 @@
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Accommodation from './pages/accommodation/Accommodation';
 import Error from './pages/error/Error_404';

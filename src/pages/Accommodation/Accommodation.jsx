@@ -11,7 +11,7 @@ import Tag from "../../components/tag/Tag";
 import Collapse from "../../components/collapse/Collapse";
 
 export default function Accommodation() {
-    const { id } = useParams();
+    const { id } = useParams(); //add use navigate
     const [accommodation, setAccommodation] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 

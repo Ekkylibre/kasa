@@ -2,7 +2,6 @@ import './collapse.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
 export default function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +27,3 @@ export default function Collapse({ title, children }) {
         </div>
     );
 }
-
-
-Collapse.propTypes = {
-    title: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired
-};
