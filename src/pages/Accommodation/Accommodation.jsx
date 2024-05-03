@@ -3,10 +3,9 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import { useEffect, useState } from "react";
 import './accommodation.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Tag from "../../components/tag/Tag";
 import Collapse from "../../components/collapse/Collapse";
+import Stars from "../../components/stars/Stars";
 
 export default function Accommodation() {
     const { id } = useParams();
@@ -32,25 +31,13 @@ export default function Accommodation() {
 
         fetchData();
     }, [id, navigate]);
+
     const handleNextImage = () => {
         setCurrentIndex((currentIndex + 1) % accommodation.pictures.length);
     };
 
     const handlePrevImage = () => {
         setCurrentIndex((currentIndex - 1 + accommodation.pictures.length) % accommodation.pictures.length);
-    };
-
-
-    const renderStars = (rating) => {
-        const stars = [];
-        for (let i = 0; i < 5; i++) {
-            if (i < rating) {
-                stars.push(<FontAwesomeIcon icon={faStar} key={i} style={{ color: '#FF6060' }} />);
-            } else {
-                stars.push(<FontAwesomeIcon icon={faStar} key={i} style={{ color: '#E3E3E3' }} />);
-            }
-        }
-        return stars;
     };
 
     return (
@@ -87,7 +74,7 @@ export default function Accommodation() {
                                     <img src={accommodation.host.picture} alt={accommodation.host.name} />
                                 </div>
                                 <p className="stars">
-                                    {renderStars(accommodation.rating)}
+                                <Stars rating={accommodation.rating} />
                                 </p>
                             </div>
                         </div>
