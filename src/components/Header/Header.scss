@@ -26,13 +26,27 @@ header {
 
         a {
           text-decoration: none;
+          color: black;
 
           &:hover {
             text-decoration: underline;
+          }
+
+          &.active {
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 1.5px;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background-color: black;
+            }
           }
         }
       }
     }
   }
-
 }
