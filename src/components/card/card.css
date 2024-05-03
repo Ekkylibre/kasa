@@ -1,9 +1,9 @@
-section {
+.main-content {
   margin-left: auto;
   margin-right: auto;
   max-width: 1240px;
 }
-section ul {
+.main-content ul {
   background-color: #F6F6F6;
   list-style: none;
   display: grid;
@@ -12,14 +12,14 @@ section ul {
   border-radius: 10px;
   gap: 60px;
 }
-section ul li div {
+.main-content ul li div {
   position: relative;
   overflow: hidden;
   width: 340px;
   height: 340px;
   border-radius: 10px;
 }
-section ul li div::before {
+.main-content ul li div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,14 +30,14 @@ section ul li div::before {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   z-index: 0;
 }
-section ul li img {
+.main-content ul li img {
   width: 340px;
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-section ul li h2 {
+.main-content ul li h2 {
   color: white;
   font-size: 18px;
   font-weight: 700;

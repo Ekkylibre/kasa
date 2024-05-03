@@ -21,19 +21,21 @@ export default function Card() {
     };
     
     return (
-        <section>
-            <ul>
-                {data.map(accommodation => (
-                    <li key={accommodation.id}>                     
-                        <Link to={`/accommodation/${accommodation.id}`}>
-                            <div>
-                                <img src={accommodation.cover} alt={accommodation.title} />
-                                <h2>{accommodation.title}</h2>
-                            </div>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </section>
+        <main>
+            <div className='main-content'>
+                <ul>
+                    {data.map(accommodation => (
+                        <li key={accommodation.id}>                     
+                            <Link to={`/accommodation/${accommodation.id}`}>
+                                <div>
+                                    <img src={accommodation.cover} alt={accommodation.title} />
+                                    <h2>{accommodation.title}</h2>
+                                </div>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </main>
     )
 }

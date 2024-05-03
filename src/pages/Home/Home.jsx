@@ -9,12 +9,11 @@ export default function Home() {
     const bannerImg = "/img1.jpg";
 
     return (
-        <div>
+        <>
             <Header />
             <Banner text={text} bannerImg={bannerImg}/>
             <Card />
             <Footer />
-        </div>
-
+        </>
     );
 }
