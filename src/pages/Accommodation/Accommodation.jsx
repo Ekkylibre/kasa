@@ -6,6 +6,7 @@ import './accommodation.css';
 import Tag from "../../components/tag/Tag";
 import Collapse from "../../components/collapse/Collapse";
 import Stars from "../../components/stars/Stars";
+import Profile from "../../components/profile/Profile";
 
 export default function Accommodation() {
     const { id } = useParams();
@@ -69,10 +70,7 @@ export default function Accommodation() {
                                 <Tag tags={accommodation.tags} />
                             </div>
                             <div className="host">
-                                <div className="profile">
-                                    <p>{accommodation.host.name}</p>
-                                    <img src={accommodation.host.picture} alt={accommodation.host.name} />
-                                </div>
+                                <Profile host={accommodation.host} />
                                 <Stars rating={accommodation.rating} />
                             </div>
                         </div>

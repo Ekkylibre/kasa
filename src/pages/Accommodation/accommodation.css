@@ -61,23 +61,6 @@
   flex-direction: column;
   align-items: end;
 }
-.main-container div .host .profile {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin-bottom: 21px;
-  gap: 10px;
-}
-.main-container div .host .profile p {
-  color: #FF6060;
-  margin-bottom: 0;
-  text-align: end;
-}
-.main-container div .host .profile img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
 .main-container .collapse-container {
   display: flex;
   gap: 76px;
