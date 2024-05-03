@@ -1,22 +1,22 @@
-article {
+.error-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-article h1 {
+.error-content h1 {
   color: #FF6060;
   font-size: 288px;
   font-weight: 700;
   margin-top: 89px;
 }
-article p {
+.error-content p {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
   margin-top: 139px;
 }
-article .link {
+.error-content .link {
   font-size: 18px;
   font-weight: 500;
   margin-top: 139px;
