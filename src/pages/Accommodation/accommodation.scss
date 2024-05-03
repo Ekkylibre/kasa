@@ -53,7 +53,6 @@ $primary-color: #FF6060;
     .accommodation-info {
         display: flex;
         justify-content: space-between;
-        align-items: center;
 
         h2 {
             color: $primary-color;
@@ -61,7 +60,7 @@ $primary-color: #FF6060;
             font-weight: 500;
         }
 
-        p {
+        .accommodation-location {
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 20px;
