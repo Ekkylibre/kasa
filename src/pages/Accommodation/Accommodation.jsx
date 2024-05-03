@@ -66,7 +66,7 @@ export default function Accommodation() {
                         <div className="accommodation-info">
                             <div>
                                 <h2>{accommodation.title}</h2>
-                                <p>{accommodation.location}</p>
+                                <p className="accommodation-location">{accommodation.location}</p>
                                 <Tag tags={accommodation.tags} />
                             </div>
                             <div className="host">

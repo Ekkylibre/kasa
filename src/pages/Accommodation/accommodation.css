@@ -44,14 +44,13 @@
 .main-container .accommodation-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .main-container .accommodation-info h2 {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
-.main-container .accommodation-info p {
+.main-container .accommodation-info .accommodation-location {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;

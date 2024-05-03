@@ -7,10 +7,11 @@ $primary-color: #FF6060;
     margin-bottom: 21px;
     gap: 10px;
 
-    p {
+    .profile-name {
         color: $primary-color;
-        margin-bottom: 0;
         text-align: end;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     img {
