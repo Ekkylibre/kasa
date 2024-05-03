@@ -40,22 +40,24 @@ export default function About() {
     };
 
     return (
-        <div>
+        <>
             <Header />
             <Banner text={text} bannerImg={bannerImg} />
-            <div className="collapse">
-                {data.map(item => (
-                    <Collapse
-                        key={item.id}
-                        title={item.title}
-                        isOpen={isOpenMap[item.id]}
-                        toggleCollapse={() => toggleCollapse(item.id)}
-                    >
-                        <p>{item.content}</p>
-                    </Collapse>
-                ))}
-            </div>
+            <main>
+                <div className="collapse">
+                    {data.map(item => (
+                        <Collapse
+                            key={item.id}
+                            title={item.title}
+                            isOpen={isOpenMap[item.id]}
+                            toggleCollapse={() => toggleCollapse(item.id)}
+                        >
+                            <p>{item.content}</p>
+                        </Collapse>
+                    ))}
+                </div>
+            </main>
             <Footer />
-        </div>
+        </>
     );
 }
