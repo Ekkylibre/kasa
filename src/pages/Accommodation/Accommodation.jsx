@@ -54,57 +54,59 @@ export default function Accommodation() {
     };
 
     return (
-        <div>
+        <>
             <Header />
             {accommodation && (
                 <main>
-                    <div className="carrousel">
-                        <div className="counter">{currentIndex + 1}/{accommodation.pictures.length}</div>
-                        <img className="accommodation-img" src={accommodation.pictures[currentIndex]} alt={accommodation.title} />
-                        <svg className="chevron-left" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={handlePrevImage}>
-                            {<svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M47.04 7.78312L39.92 0.703125L0.359985 40.3031L39.96 79.9031L47.04 72.8231L14.52 40.3031L47.04 7.78312Z" fill="white" />
+                    <div className="main-container">
+                        <div className="carrousel">
+                            <div className="counter">{currentIndex + 1}/{accommodation.pictures.length}</div>
+                            <img className="accommodation-img" src={accommodation.pictures[currentIndex]} alt={accommodation.title} />
+                            <svg className="chevron-left" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={handlePrevImage}>
+                                {<svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M47.04 7.78312L39.92 0.703125L0.359985 40.3031L39.96 79.9031L47.04 72.8231L14.52 40.3031L47.04 7.78312Z" fill="white" />
+                                </svg>
+                                }
                             </svg>
-                            }
-                        </svg>
-                        <svg className="chevron-right" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={handleNextImage}>
-                            {<svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z" fill="white" />
+                            <svg className="chevron-right" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={handleNextImage}>
+                                {<svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z" fill="white" />
+                                </svg>
+                                }
                             </svg>
-                            }
-                        </svg>
-                    </div>
-                    <div className="accommodation-info">
-                        <div>
-                            <h2>{accommodation.title}</h2>
-                            <p>{accommodation.location}</p>
-                            <Tag tags={accommodation.tags} />
                         </div>
-                        <div className="host">
-                            <div className="profile">
-                                <p>{accommodation.host.name}</p>
-                                <img src={accommodation.host.picture} alt={accommodation.host.name} />
+                        <div className="accommodation-info">
+                            <div>
+                                <h2>{accommodation.title}</h2>
+                                <p>{accommodation.location}</p>
+                                <Tag tags={accommodation.tags} />
                             </div>
-                            <p className="stars">
-                                {renderStars(accommodation.rating)}
-                            </p>
+                            <div className="host">
+                                <div className="profile">
+                                    <p>{accommodation.host.name}</p>
+                                    <img src={accommodation.host.picture} alt={accommodation.host.name} />
+                                </div>
+                                <p className="stars">
+                                    {renderStars(accommodation.rating)}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="collapse-container">
-                        <Collapse title="Description">
-                            <p>{accommodation.description}</p>
-                        </Collapse>
-                        <Collapse title="Équipements">
-                            <ul className="equipment">
-                                {accommodation.equipments.map(equipment => (
-                                    <li key={equipment}>{equipment}</li>
-                                ))}
-                            </ul>
-                        </Collapse>
+                        <div className="collapse-container">
+                            <Collapse title="Description">
+                                <p>{accommodation.description}</p>
+                            </Collapse>
+                            <Collapse title="Équipements">
+                                <ul className="equipment">
+                                    {accommodation.equipments.map(equipment => (
+                                        <li key={equipment}>{equipment}</li>
+                                    ))}
+                                </ul>
+                            </Collapse>
+                        </div>
                     </div>
                 </main>
             )}
             <Footer />
-        </div>
+        </>
     );
 }

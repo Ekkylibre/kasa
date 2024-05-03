@@ -1,14 +1,14 @@
-main {
+.main-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1240px;
 }
-main .carrousel {
+.main-container .carrousel {
   position: relative;
   display: flex;
   align-items: center;
 }
-main .carrousel .counter {
+.main-container .carrousel .counter {
   color: white;
   font-size: 18px;
   position: absolute;
@@ -16,7 +16,7 @@ main .carrousel .counter {
   left: 50%;
   transform: translateX(-50%);
 }
-main .carrousel .accommodation-img {
+.main-container .carrousel .accommodation-img {
   display: block;
   width: 100%;
   height: 415px;
@@ -25,67 +25,67 @@ main .carrousel .accommodation-img {
      object-fit: cover;
   margin-bottom: 30px;
 }
-main .carrousel .chevron-left,
-main .carrousel .chevron-right {
+.main-container .carrousel .chevron-left,
+.main-container .carrousel .chevron-right {
   position: absolute;
   margin: 23px;
   cursor: pointer;
 }
-main .carrousel .chevron-left path,
-main .carrousel .chevron-right path {
+.main-container .carrousel .chevron-left path,
+.main-container .carrousel .chevron-right path {
   fill: white;
 }
-main .carrousel .chevron-left {
+.main-container .carrousel .chevron-left {
   left: 0;
 }
-main .carrousel .chevron-right {
+.main-container .carrousel .chevron-right {
   right: 0;
 }
-main .accommodation-info {
+.main-container .accommodation-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .accommodation-info h2 {
+.main-container .accommodation-info h2 {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
-main .accommodation-info p {
+.main-container .accommodation-info p {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-main div .host {
+.main-container div .host {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-main div .host .profile {
+.main-container div .host .profile {
   display: flex;
   align-items: center;
   width: 80%;
   margin-bottom: 21px;
   gap: 10px;
 }
-main div .host .profile p {
+.main-container div .host .profile p {
   color: #FF6060;
   margin-bottom: 0;
   text-align: end;
 }
-main div .host .profile img {
+.main-container div .host .profile img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
-main div .host .stars {
+.main-container div .host .stars {
   display: flex;
   gap: 10px;
 }
-main .collapse-container {
+.main-container .collapse-container {
   display: flex;
   gap: 76px;
 }
-main .collapse-container .dropdown {
+.main-container .collapse-container .dropdown {
   width: 582px;
 }/*# sourceMappingURL=accommodation.css.map */
