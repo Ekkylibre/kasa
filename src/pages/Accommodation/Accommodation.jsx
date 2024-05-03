@@ -90,7 +90,7 @@ export default function Accommodation() {
                     </div>
                     <div className="collapse-container">
                         <Collapse title="Description">
-                            {accommodation.description}
+                            <p>{accommodation.description}</p>
                         </Collapse>
                         <Collapse title="Équipements">
                             <ul className="equipment">

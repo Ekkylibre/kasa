@@ -104,5 +104,9 @@ main {
     .collapse-container {
         display: flex;
         gap: 76px;
+
+        .dropdown {
+            width: 582px;
+        }
     }
 }

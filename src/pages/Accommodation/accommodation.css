@@ -85,4 +85,7 @@ main div .host .stars {
 main .collapse-container {
   display: flex;
   gap: 76px;
+}
+main .collapse-container .dropdown {
+  width: 582px;
 }/*# sourceMappingURL=accommodation.css.map */

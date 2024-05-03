@@ -2,6 +2,7 @@ import './collapse.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,17 +13,24 @@ export default function Collapse({ title, children }) {
 
     return (
         <div className="collapse-container">
-            <div className="dropdown">
-                <div className="collapse-title">
+            <div className={`dropdown ${isOpen ? 'open' : ''}`}>
+                <div className="collapse-title" onClick={toggleCollapse}>
                     <p>{title}</p>
                     <FontAwesomeIcon
                         icon={faChevronUp}
-                        onClick={toggleCollapse}
                         className={`fa-chevron-up ${isOpen ? 'rotate-down' : 'rotate-up'}`}
                     />
                 </div>
-                {isOpen && children}
+                <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
+                    {children}
+                </div>
             </div>       
         </div>
     );
 }
+
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired
+};

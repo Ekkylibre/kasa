@@ -1,9 +1,6 @@
 $primary-color: #FF6060;
 
 .dropdown {
-    width: 582px;
-    background-color: #F6F6F673;
-
     .collapse-title {
         color: white;
         background-color: $primary-color;
@@ -33,6 +30,17 @@ $primary-color: #FF6060;
         }
     }
 
+    .collapse-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #F6F6F673;
+    }
+    
+    .open {
+        max-height: 1000px;
+    }
+    
     .equipment {
         list-style-type: none;
         padding: 20px;
