@@ -3,12 +3,14 @@
   margin-right: auto;
   max-width: 1240px;
 }
-.main-container .carrousel {
+
+.carrousel {
   position: relative;
   display: flex;
   align-items: center;
 }
-.main-container .carrousel .counter {
+
+.counter {
   color: white;
   font-size: 18px;
   position: absolute;
@@ -16,7 +18,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.main-container .carrousel .accommodation-img {
+
+.accommodation-img {
   display: block;
   width: 100%;
   height: 415px;
@@ -25,35 +28,65 @@
      object-fit: cover;
   margin-bottom: 30px;
 }
-.main-container .carrousel .chevron-left,
-.main-container .carrousel .chevron-right {
+
+.chevron-left,
+.chevron-right {
   position: absolute;
   margin: 23px;
   cursor: pointer;
 }
-.main-container .carrousel .chevron-left path,
-.main-container .carrousel .chevron-right path {
+.chevron-left path,
+.chevron-right path {
   fill: white;
 }
-.main-container .carrousel .chevron-left {
+
+.chevron-left {
   left: 0;
 }
-.main-container .carrousel .chevron-right {
+
+.chevron-right {
   right: 0;
 }
-.main-container .accommodation-info {
+
+.accommodation-info {
   display: flex;
   justify-content: space-between;
 }
-.main-container div .host {
+
+div .host {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.main-container .collapse-container {
+
+.collapse-container {
   display: flex;
   gap: 76px;
 }
-.main-container .collapse-container .dropdown {
-  width: 582px;
+.collapse-container .dropdown {
+  width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+  .main-container {
+    padding: 0 20px 0 20px;
+  }
+  .collapse-container {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .main-container .accommodation-info {
+    flex-direction: column;
+  }
+  .main-container div .host {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+  .main-container .collapse-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=accommodation.css.map */

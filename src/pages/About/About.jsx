@@ -20,7 +20,7 @@ export default function About() {
             const response = await fetch('src/assets/data/collapse.json');
             const jsonData = await response.json();
             setData(jsonData);
-           
+
             const initialIsOpenMap = {};
             jsonData.forEach(item => {
                 initialIsOpenMap[item.id] = false;

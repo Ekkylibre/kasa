@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import './stars.css'
 
 export default function Stars(accommodation) {
     
@@ -16,6 +17,6 @@ export default function Stars(accommodation) {
     };
 
   return (
-    <div>{renderStars(accommodation.rating)}</div>
+    <div className='stars'>{renderStars(accommodation.rating)}</div>
   )
 }

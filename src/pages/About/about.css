@@ -4,21 +4,17 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .collapse .collapse-container .dropdown {
-  width: 1023px;
+  width: 123px;
 }
 
 @media screen and (max-width: 1240px) {
   .collapse {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  .collapse .collapse-container .dropdown {
-    width: 100%;
-    padding: 0 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }/*# sourceMappingURL=about.css.map */
