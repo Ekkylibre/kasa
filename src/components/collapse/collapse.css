@@ -1,0 +1,41 @@
+.dropdown .collapse-title {
+  color: white;
+  background-color: #FF6060;
+  border-radius: 5px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.dropdown .collapse-title .fa-chevron-up,
+.dropdown .collapse-title .fa-chevron-up {
+  cursor: pointer;
+}
+.dropdown .collapse-title .rotate-up {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+.dropdown .collapse-title .rotate-down {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
+}
+.dropdown .collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+.dropdown .open {
+  max-height: 1000px;
+}
+.dropdown .equipment {
+  list-style-type: none;
+  padding: 20px;
+}
+.dropdown p {
+  padding: 20px;
+}/*# sourceMappingURL=collapse.css.map */

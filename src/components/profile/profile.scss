@@ -1,0 +1,22 @@
+$primary-color: #FF6060;
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 21px;
+    gap: 10px;
+
+    .profile-name {
+        color: $primary-color;
+        text-align: end;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}

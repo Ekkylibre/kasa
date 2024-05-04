@@ -1,0 +1,13 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .collapse-container {
+        .dropdown {
+            width: 1023px;
+        }
+    }
+}
