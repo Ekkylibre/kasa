@@ -20,7 +20,7 @@ export default function About() {
             const response = await fetch('src/assets/data/collapse.json');
             const jsonData = await response.json();
             setData(jsonData);
-            // Initialiser l'état d'ouverture de chaque collapse à false
+           
             const initialIsOpenMap = {};
             jsonData.forEach(item => {
                 initialIsOpenMap[item.id] = false;
@@ -32,7 +32,6 @@ export default function About() {
     };
 
     const toggleCollapse = (collapseId) => {
-        // Inverser l'état d'ouverture du collapse avec l'id donné
         setIsOpenMap(prevState => ({
             ...prevState,
             [collapseId]: !prevState[collapseId]

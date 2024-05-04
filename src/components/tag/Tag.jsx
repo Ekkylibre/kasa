@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import './tag.css'
 
 export default function Tag({ tags }) {
@@ -10,7 +9,3 @@ export default function Tag({ tags }) {
         </ul>
     );
 }
-
-Tag.propTypes = {
-    tags: PropTypes.array.isRequired,
-};
