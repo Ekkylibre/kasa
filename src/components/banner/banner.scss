@@ -48,9 +48,19 @@
     padding-right: 20px;
 
     .banner-container {
+      padding-bottom: 22px;
+
+      img {
+        height: 111px;
+      }
+
+      &::before {
+        height: 111px;
+      }
+
       h1 {
         font-size: 24px;
-        text-align: start;
+        padding-bottom: 15px;
       }
     }
   }
