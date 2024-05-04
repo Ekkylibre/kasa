@@ -11,7 +11,7 @@ export default function Collapse({ title, children }) {
     };
 
     return (
-        <div className="collapse-container">
+        <>
             <div className={`dropdown ${isOpen ? 'open' : ''}`}>
                 <div className="collapse-title" onClick={toggleCollapse}>
                     <p>{title}</p>
@@ -24,6 +24,6 @@ export default function Collapse({ title, children }) {
                     {children}
                 </div>
             </div>       
-        </div>
+        </>
     );
 }

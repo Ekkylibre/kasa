@@ -18,6 +18,7 @@ $primary-color: #FF6060;
         font-size: 36px;
         font-weight: 500;
         margin-top: 139px;
+        text-align: center;
     }
     
     .link {
@@ -27,3 +28,35 @@ $primary-color: #FF6060;
         margin-bottom: 139px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .error-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h1 {
+            color: $primary-color;
+            font-size: 96px;
+            font-weight: 700;
+            margin-top: 89px;
+        }
+        
+        p {
+            color: $primary-color;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 139px;
+            text-align: center;
+        }
+        
+        .link {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 139px;
+            margin-bottom: 139px;
+        }
+    }
+  }

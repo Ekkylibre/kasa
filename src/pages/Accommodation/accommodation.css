@@ -55,5 +55,36 @@
   gap: 76px;
 }
 .main-container .collapse-container .dropdown {
-  width: 582px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+  .main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-container .carrousel .counter {
+    display: none;
+  }
+  .main-container .carrousel .chevron-left,
+  .main-container .carrousel .chevron-right {
+    width: auto;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .main-container .accommodation-info {
+    flex-direction: column;
+  }
+  .main-container div .host {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+  .main-container .collapse-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=accommodation.css.map */

@@ -29,9 +29,6 @@
 }
 .banner .banner-container h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   font-size: 48px;
   font-weight: 700;
@@ -43,8 +40,18 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .banner .banner-container {
+    padding-bottom: 22px;
+  }
+  .banner .banner-container img {
+    height: 111px;
+  }
+  .banner .banner-container::before {
+    height: 111px;
+  }
   .banner .banner-container h1 {
     font-size: 24px;
     text-align: start;
+    margin-left: 16px;
   }
 }/*# sourceMappingURL=banner.css.map */

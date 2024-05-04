@@ -1,8 +1,8 @@
 $primary-color : #FF6060;
 
-
 .tag {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 
     li {
