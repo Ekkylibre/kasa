@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export default function Carousel({accommodation}) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -13,7 +12,7 @@ export default function Carousel({accommodation}) {
     };
 
     return (
-        <div className="carrousel">
+        <div>
             <div className="counter">{currentIndex + 1}/{accommodation.pictures.length}</div>
             <img className="accommodation-img" src={accommodation.pictures[currentIndex]} alt={accommodation.title} />
             <svg className="chevron-left" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={handlePrevImage}>
