@@ -7,4 +7,18 @@
 }
 .collapse .collapse-container .dropdown {
   width: 1023px;
+}
+
+@media screen and (max-width: 1240px) {
+  .collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .collapse .collapse-container .dropdown {
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
 }/*# sourceMappingURL=about.css.map */
