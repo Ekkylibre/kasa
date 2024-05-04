@@ -2,80 +2,90 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1240px;
-}
 
-.carrousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.counter {
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.accommodation-img {
-    display: block;
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
-    object-fit: cover;
-    margin-bottom: 30px;
-}
-
-.chevron-left,
-.chevron-right {
-    position: absolute;
-    margin: 23px;
-    cursor: pointer;
-
-    path {
-        fill: white;
-    }
-}
-
-.chevron-left {
-    left: 0;
-}
-
-.chevron-right {
-    right: 0;
-}
-
-.accommodation-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-div {
-    .host {
+    .carrousel {
+        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: end;
+        align-items: center;
+
+        .counter {
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .accommodation-img {
+            display: block;
+            width: 100%;
+            height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .chevron-left,
+        .chevron-right {
+            position: absolute;
+            margin: 23px;
+            cursor: pointer;
+
+            path {
+                fill: white;
+            }
+        }
+
+        .chevron-left {
+            left: 0;
+        }
+
+        .chevron-right {
+            right: 0;
+        }
     }
-}
 
-.collapse-container {
-    display: flex;
-    gap: 76px;
+    .accommodation-info {
+        display: flex;
+        justify-content: space-between;
+    }
 
-    .dropdown {
-        width: 100%;
+    div {
+        .host {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+
+    .collapse-container {
+        display: flex;
+        gap: 76px;
+
+        .dropdown {
+            width: 100%;
+        }
     }
 }
 
 @media screen and (max-width: 1240px) {
-    .main-container {
-        padding: 0 20px 0 20px;
-    }
 
-    .collapse-container {
-        gap: 20px;
+    .main-container {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .carrousel {
+            .counter {
+                display: none;
+            }
+
+            .chevron-left,
+            .chevron-right {
+                width: auto;
+                height: 40px;
+            }
+        }
     }
 }
 
@@ -97,6 +107,7 @@ div {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
         }
     }
 }

@@ -3,14 +3,12 @@
   margin-right: auto;
   max-width: 1240px;
 }
-
-.carrousel {
+.main-container .carrousel {
   position: relative;
   display: flex;
   align-items: center;
 }
-
-.counter {
+.main-container .carrousel .counter {
   color: white;
   font-size: 18px;
   position: absolute;
@@ -18,8 +16,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
-.accommodation-img {
+.main-container .carrousel .accommodation-img {
   display: block;
   width: 100%;
   height: 415px;
@@ -28,51 +25,51 @@
      object-fit: cover;
   margin-bottom: 30px;
 }
-
-.chevron-left,
-.chevron-right {
+.main-container .carrousel .chevron-left,
+.main-container .carrousel .chevron-right {
   position: absolute;
   margin: 23px;
   cursor: pointer;
 }
-.chevron-left path,
-.chevron-right path {
+.main-container .carrousel .chevron-left path,
+.main-container .carrousel .chevron-right path {
   fill: white;
 }
-
-.chevron-left {
+.main-container .carrousel .chevron-left {
   left: 0;
 }
-
-.chevron-right {
+.main-container .carrousel .chevron-right {
   right: 0;
 }
-
-.accommodation-info {
+.main-container .accommodation-info {
   display: flex;
   justify-content: space-between;
 }
-
-div .host {
+.main-container div .host {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-
-.collapse-container {
+.main-container .collapse-container {
   display: flex;
   gap: 76px;
 }
-.collapse-container .dropdown {
+.main-container .collapse-container .dropdown {
   width: 100%;
 }
 
 @media screen and (max-width: 1240px) {
   .main-container {
-    padding: 0 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .collapse-container {
-    gap: 20px;
+  .main-container .carrousel .counter {
+    display: none;
+  }
+  .main-container .carrousel .chevron-left,
+  .main-container .carrousel .chevron-right {
+    width: auto;
+    height: 40px;
   }
 }
 @media screen and (max-width: 555px) {
@@ -88,5 +85,6 @@ div .host {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
 }/*# sourceMappingURL=accommodation.css.map */
