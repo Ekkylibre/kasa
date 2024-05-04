@@ -51,5 +51,7 @@
   }
   .banner .banner-container h1 {
     font-size: 24px;
+    text-align: start;
+    margin-left: 16px;
   }
 }/*# sourceMappingURL=banner.css.map */
