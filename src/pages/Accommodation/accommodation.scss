@@ -48,23 +48,9 @@ $primary-color: #FF6060;
         }
     }
 
-
-
     .accommodation-info {
         display: flex;
         justify-content: space-between;
-
-        h2 {
-            color: $primary-color;
-            font-size: 36px;
-            font-weight: 500;
-        }
-
-        .accommodation-location {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
     }
 
     div {

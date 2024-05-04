@@ -7,6 +7,7 @@ import Tag from "../../components/tag/Tag";
 import Collapse from "../../components/collapse/Collapse";
 import Stars from "../../components/stars/Stars";
 import Profile from "../../components/profile/Profile";
+import AccommodationInfo from "../../components/accommodationInfo/AccommodationInfo";
 
 export default function Accommodation() {
     const { id } = useParams();
@@ -65,8 +66,7 @@ export default function Accommodation() {
                         </div>
                         <div className="accommodation-info">
                             <div>
-                                <h2>{accommodation.title}</h2>
-                                <p className="accommodation-location">{accommodation.location}</p>
+                            <AccommodationInfo title={accommodation.title} location={accommodation.location} />
                                 <Tag tags={accommodation.tags} />
                             </div>
                             <div className="host">
