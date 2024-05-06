@@ -1,14 +1,15 @@
 import { useNavigate, useParams } from "react-router-dom";
-import Footer from "../../components/footer/Footer";
+import { useState } from "react";
 import Header from "../../components/header/Header";
-import { useEffect, useState } from "react";
-import './accommodation.css';
-import Tag from "../../components/tag/Tag";
-import Collapse from "../../components/collapse/Collapse";
-import Stars from "../../components/stars/Stars";
-import Profile from "../../components/profile/Profile";
+import Footer from "../../components/footer/Footer";
 import AccommodationInfo from "../../components/accommodationInfo/AccommodationInfo";
 import Carousel from "../../components/carousel/Carousel";
+import Tag from "../../components/tag/Tag";
+import Profile from "../../components/profile/Profile";
+import Collapse from "../../components/collapse/Collapse";
+import Stars from "../../components/stars/Stars";
+import './accommodation.css';
+import fetchDataId from "../../fetch/fetchDataId";
 
 export default function Accommodation() {
     const { id } = useParams();
@@ -16,24 +17,7 @@ export default function Accommodation() {
     const [accommodation, setAccommodation] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('../src/assets/data/data.json');
-                const jsonData = await response.json();
-                const selectedAccommodation = jsonData.find(item => item.id === id);
-                if (!selectedAccommodation) {
-                    navigate('/error');
-                    return;
-                }
-                setAccommodation(selectedAccommodation);
-            } catch (error) {
-                console.error('Erreur lors de la récupération des données JSON :', error);
-            }
-        };
-
-        fetchData();
-    }, [id, navigate]);
+    fetchDataId(id, navigate, setAccommodation);
 
     return (
         <>
