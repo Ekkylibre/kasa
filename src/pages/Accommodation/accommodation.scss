@@ -3,49 +3,6 @@
     margin-right: auto;
     max-width: 1240px;
 
-    .carrousel {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        .counter {
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .accommodation-img {
-            display: block;
-            width: 100%;
-            height: 415px;
-            border-radius: 25px;
-            object-fit: cover;
-            margin-bottom: 30px;
-        }
-
-        .chevron-left,
-        .chevron-right {
-            position: absolute;
-            margin: 23px;
-            cursor: pointer;
-
-            path {
-                fill: white;
-            }
-        }
-
-        .chevron-left {
-            left: 0;
-        }
-
-        .chevron-right {
-            right: 0;
-        }
-    }
-
     .accommodation-info {
         display: flex;
         justify-content: space-between;
