@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './card.css';
 import { Link } from 'react-router-dom';
-import useFetchData from '../../fetch/fetchData';
+import fetchData from '../../fetch/fetchData';
 
 export default function Card() {
     const [data, setData] = useState([]);
 
-    useFetchData(setData);
+    fetchData(setData);
     
     return (
         <main>

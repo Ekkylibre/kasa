@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function useFetchData(setData) {
+function fetchData(setData) {
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -16,4 +16,4 @@ function useFetchData(setData) {
     }, [setData]);
 }
 
-export default useFetchData;
+export default fetchData;
