@@ -15,7 +15,6 @@ export default function Accommodation() {
     const { id } = useParams();
     const navigate = useNavigate();
     const [accommodation, setAccommodation] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
 
     fetchDataId(id, navigate, setAccommodation);
 
@@ -27,8 +26,6 @@ export default function Accommodation() {
                     <div className="main-container">
                         <Carousel
                             pictures={accommodation.pictures}
-                            currentIndex={currentIndex}
-                            setCurrentIndex={setCurrentIndex}
                         />
                         <div className="accommodation-info">
                             <div>

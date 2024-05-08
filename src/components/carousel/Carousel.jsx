@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './carousel.css';
 
-function Carousel({ pictures, currentIndex, setCurrentIndex }) {
+function Carousel({ pictures }) {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     const handleNextImage = () => {
         setCurrentIndex((currentIndex + 1) % pictures.length);
     };
