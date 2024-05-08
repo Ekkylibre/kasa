@@ -13,9 +13,10 @@ export default function Collapse({ title, children }) {
     return (
         <>
             <div className={`dropdown ${isOpen ? 'open' : ''}`}>
-                <div className="collapse-title" onClick={toggleCollapse}>
+                <div className="collapse-title">
                     <p>{title}</p>
                     <FontAwesomeIcon
+                        onClick={toggleCollapse}
                         icon={faChevronUp}
                         className={`fa-chevron-up ${isOpen ? 'rotate-down' : 'rotate-up'}`}
                     />
@@ -23,7 +24,7 @@ export default function Collapse({ title, children }) {
                 <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
                     {children}
                 </div>
-            </div>       
+            </div>
         </>
     );
 }
