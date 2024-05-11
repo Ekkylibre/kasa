@@ -10,16 +10,8 @@ export default function About() {
     const text = "";
     const bannerImg = "/img2.jpg";
     const [data, setData] = useState([]);
-    const [isOpenMap, setIsOpenMap] = useState({});
 
     fetchCollapse(setData, setIsOpenMap);
-
-    const toggleCollapse = (collapseId) => {
-        setIsOpenMap(prevState => ({
-            ...prevState,
-            [collapseId]: !prevState[collapseId]
-        }));
-    };
 
     return (
         <>
